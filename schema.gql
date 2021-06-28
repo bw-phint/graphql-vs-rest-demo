@@ -1,0 +1,42 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type Post {
+  id: ID!
+  title: String!
+  content: String
+  published: Boolean!
+  createdAt: Date!
+  updatedAt: Date!
+}
+
+"""Date custom scalar type"""
+scalar Date
+
+type User {
+  id: ID!
+  name: String!
+  email: String!
+  posts: [Post!]
+}
+
+type Query {
+  users: [User!]!
+}
+
+type Mutation {
+  createUser(newUserData: NewUserInput!): User!
+  createPost(newPostData: NewPostInput!): Post!
+}
+
+input NewUserInput {
+  name: String!
+  email: String!
+}
+
+input NewPostInput {
+  authorId: String!
+  title: String!
+  content: String
+}

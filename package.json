@@ -1,0 +1,36 @@
+{
+  "name": "graphql-vs-rest",
+  "version": "0.0.1",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "nest build",
+    "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
+    "start": "nest start",
+    "start:dev": "nest start --watch",
+    "start:debug": "nest start --debug --watch",
+    "start:prod": "node dist/main"
+  },
+  "dependencies": {
+    "@nestjs/common": "^7.6.15",
+    "@nestjs/core": "^7.6.15",
+    "@nestjs/graphql": "^7.11.0",
+    "@nestjs/platform-express": "^7.6.15",
+    "@prisma/client": "^2.25.0",
+    "apollo-server": "^2.25.2",
+    "apollo-server-express": "^2.25.2",
+    "class-validator": "^0.13.1",
+    "dayjs": "^1.10.5",
+    "graphql": "^15.5.1",
+    "graphql-tools": "^7.0.5",
+    "prisma": "2.25.0",
+    "reflect-metadata": "^0.1.13",
+    "rimraf": "^3.0.2",
+    "rxjs": "^6.6.6"
+  },
+  "devDependencies": {
+    "@nestjs/cli": "^7.6.0",
+    "@nestjs/schematics": "^7.3.1",
+    "prettier": "^2.3.2"
+  }
+}
